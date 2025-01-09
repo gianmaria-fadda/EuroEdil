@@ -1,8 +1,7 @@
 <script>
 export default {
   data() {
-    return { 
-      message: 'Template Vite + Vue'
+    return {
     }
   }
 }
@@ -10,9 +9,13 @@ export default {
 
 <template>
   <header>
-    <h1>
-      {{ message }}
-    </h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg col-md col-sm">
+          a
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -20,12 +23,30 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 header {
-  background-color: $mainBgColor;
-  text-align: center;
-  padding: 20px 0;
-}
+  
+  height: 50px;
+  background-color: red;
+  .container-fluid {
 
-h1 {
-  color: $mainColor;
+
+    .row {
+
+
+      .col-lg {
+
+        
+      }
+
+      .col-md {
+
+        
+      }
+
+      .col-sm {
+
+        
+      }
+    }
+  }
 }
 </style>

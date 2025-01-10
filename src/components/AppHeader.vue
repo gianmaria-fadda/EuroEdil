@@ -13,7 +13,7 @@ export default {
       <div class="row">
         <nav class="navbar navbar-expand-md d-md-none">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./AppHeader.vue">
               <img src="/public/EuroEdilLogo.webp" alt="EuroEdilLogo" />
             </a>
             <button
@@ -22,24 +22,22 @@ export default {
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
               aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div
               class="offcanvas offcanvas-end"
               tabindex="-1"
               id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
+              aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                 <button
                   type="button"
                   class="btn-close"
                   data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
+                  aria-label="Close">
+                </button>
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav">
@@ -69,16 +67,16 @@ export default {
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="/src/components/sections/ChiSiamo.vue">Chi Siamo</a>
+                  <router-link class="nav-link" to="/chi-siamo">Chi Siamo</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/src/components/sections/Servizi.vue">Servizi</a>
+                  <router-link class="nav-link" to="/servizi">Servizi</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/src/components/sections/Team.vue">Team</a>
+                  <router-link class="nav-link" to="/team">Team</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/src/components/sections/Contatti.vue">Contatti</a>
+                  <router-link class="nav-link" to="/contatti">Contatti</router-link>
                 </li>
               </ul>
             </div>
